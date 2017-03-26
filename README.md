@@ -1,3 +1,6 @@
-# Blog-v.2
+# Ruby on Rails Tutorial: sample application
 
-This is sample application
+This is the sample application for the 
+[*Ruby on Rails Tutorial:
+Learn Web Development wwith Rails*](http://www.railstutorial.org/)
+by [Michael Hartl](http://www.micahelhartl.com/)
