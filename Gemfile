@@ -10,7 +10,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'coffee-script-source', '1.8.0'
 gem 'bootstrap-sass', '3.2.0.0'
-gem 'bcrypt', '3.1.7'
+gem 'bcrypt', '3.1.11'
 
 group :development do
   gem 'web-console', '~> 2.0'
