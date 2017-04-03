@@ -21,3 +21,6 @@
 
 # Ignore bubug
 .byebug_history
+
+# Ignore Puma config file for a while
+/config/puma.rb
