@@ -9,3 +9,4 @@ maxim:
   name: Maxim Maxim
   email: maxim@maim.com
   password_digest: <%= User.digest('password') %>
+  
