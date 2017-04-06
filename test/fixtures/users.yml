@@ -1,6 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 thitanan:
-  name: Thitanan Kaewklub
-  email: thitanan@thitanan.com
+  name: Cindy Cindy
+  email: cindy@cindy.com
+  password_digest: <%= User.digest('password') %>
+
+maxim:
+  name: Maxim Maxim
+  email: maxim@maim.com
   password_digest: <%= User.digest('password') %>
