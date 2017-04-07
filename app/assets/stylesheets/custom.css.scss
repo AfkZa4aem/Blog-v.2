@@ -176,3 +176,14 @@ aside {
 	margin-top: 45px;
 	@include box_sizing;
 }
+
+/* users list */
+.users {
+	list-style: auto;
+	margin: 0;
+	li {
+		overflow: auto;
+		padding: 10px 0;
+		border-bottom: 1px solid $gray-lighter;
+	}
+}
