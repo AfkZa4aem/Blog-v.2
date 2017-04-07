@@ -4,6 +4,7 @@ thitanan:
   name: Cindy Cindy
   email: cindy@cindy.com
   password_digest: <%= User.digest('password') %>
+  admin: true
 
 maxim:
   name: Maxim Maxim
