@@ -24,3 +24,6 @@
 
 # Ignore Puma config file for a while
 /config/puma.rb
+
+# ignore images
+/public/uploads
