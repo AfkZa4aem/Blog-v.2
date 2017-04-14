@@ -82,6 +82,7 @@ class UserTest < ActiveSupport::TestCase
     assert_not thitanan.following?(maxim)
     thitanan.follow(maxim)
     assert thitanan.following?(maxim)
+    assert maxim.followers.include?(thitanan)
     thitanan.unfollow(maxim)
     assert_not thitanan.following?(maxim)
   end
