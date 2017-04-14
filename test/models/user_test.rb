@@ -75,4 +75,14 @@ class UserTest < ActiveSupport::TestCase
       @user.destroy
     end
   end
+
+  test "should follow and unfollow a user" do
+    thitanan = users(:thitanan)
+    maxim = users(:maxim)
+    assert_not thitanan.following?(maxim)
+    thitanan.follow(maxim)
+    assert thitanan.following?(maxim)
+    thitanan.unfollow(maxim)
+    assert_not thitanan.following?(maxim)
+  end
 end
