@@ -86,4 +86,23 @@ class UserTest < ActiveSupport::TestCase
     thitanan.unfollow(maxim)
     assert_not thitanan.following?(maxim)
   end
+
+  test "feed shoud have the right posts" do
+  thitanan = users(:thitanan)
+  maxim = users(:maxim)
+  lana = users(:lana)
+  
+  lana.microposts.each do |post_following|
+    assert thitanan.feed.include?(post_following)
+  end
+
+  thitanan.microposts.each do |post_self|
+    assert thitanan.feed.include?(post_self)
+  end
+
+  maxim.microposts.each do |post_unfollowed|
+    assert_not thitanan.feed.include?(post_unfollowed)
+  end
+  
+  end
 end
